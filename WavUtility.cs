@@ -141,7 +141,6 @@ public class WavUtility
 		
 		if (junk=="JUNK") //JUNK Chunks
 		{
-			position += 4;//junk
 			FindChunk( ref position,"fmt ",fileBytes);
 		}
 		
