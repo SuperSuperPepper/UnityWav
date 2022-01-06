@@ -73,8 +73,7 @@ public class WavUtility
 		string junk = Encoding.ASCII.GetString(fileBytes, 12, 4);
 		
 		if (junk=="JUNK") //JUNK Chunks
-		{
-			position += 4;//junk
+		{			
 			FindChunk( ref position,"fmt ",fileBytes);
 		}
 
